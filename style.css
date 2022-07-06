@@ -1,0 +1,519 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Kdam Thmor Pro', sans-serif;
+	color: rgb(10, 10, 10);
+	background: #f2f2f2;
+	font-size: 1em;
+	line-height: 1.5em;
+	width: 100%;
+}
+/*
+HEADER
+ */
+    #logoHeader {
+    float: left;
+	padding: 15px 0 0 20px;
+}
+	#logoHeader:hover {
+		color: #F53727;
+	}
+	#logoHeader .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+
+#mainHeader {
+	background: #751B13;
+	color: #FFEBEB;
+	height: 80px;
+}
+#mainHeader a {
+color: #FFEBEB;
+}
+nav ul{
+float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+padding-top: 28px;
+padding-right: 20px;
+}
+
+nav ul li {
+display: inline-block;
+}
+
+nav ul li a {
+display: block;
+padding: 0 10px;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+background: #BF2E2E;
+}
+
+/* FIN HEADER */
+/* INDEX.HTML */
+/* CUERPO PAGINA */
+.titulo2 {
+	background-image: url(./Imagenes/Equipo.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.2em;
+    width: 100%;
+    height: 800px;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+h1 {text-shadow: 7px 4px 5px #C22D1F}
+
+.padre__grid{
+	width: 100%;
+	height: 500px;
+	display: grid;
+	grid-template-areas:
+	"resultado imagen imagen";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	justify-content: center;
+}
+.cubo{
+	grid-area: imagen;
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#b91c1c;
+	justify-content: center;
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	border-radius: 5%;
+	display: flex;
+	padding: 30px;
+	gap: 15px;
+}
+.cubo img{
+	height: 135px;
+	width: 135px;
+	padding: 10px;
+}
+.cuboul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+div a h2{
+	color: black;
+	text-decoration: underline;
+}
+
+.cubo--chico{
+	grid-area: resultado;
+	justify-content: center;
+	background-color:#b91c1c;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	border-radius: 10%;
+	text-align: center;
+}
+.tabla--resultados{
+	margin: auto;
+	font-size: x-large;
+	color: #FFEBEB;
+	width: 90%;
+	line-height: 1.3em;
+}
+article a h2{
+	color: black;
+	margin: 20px;
+	text-decoration:underline;
+}
+
+/* EQUIPO */
+
+.main__grid {
+	display: grid;
+	grid-template-areas:
+	"escudo escudo . ."
+	". titulo1 titulo1 ."
+	"imagen imagen imagen imagen"
+	". titulo2 titulo2 ."
+	". resultado resultado .";
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 380px 144px auto 144px 900px;
+	color: #751B13;
+}
+.main__grid__intro {
+	display: flex;
+	color: #751B13;
+	grid-area: escudo;
+	justify-content: left;
+	align-items: center;
+}
+.main__grid__titulo {
+	margin-top: 60px;
+	font-size: xx-large;
+	text-align: center;
+	margin-bottom: 60px;
+	text-decoration: underline;
+}
+#titulo1 {
+	grid-area: titulo1;
+}
+#titulo2 {
+	grid-area: titulo2;
+}
+.escudoRoja{
+	height: 300px;
+	margin: 40px;
+}
+
+.main__grid__intro__equipo{
+	margin: 0px;
+	line-height: 25px;
+}
+
+.main__grid__informacion{
+	justify-self: center;
+	grid-area: resultado;
+	line-height: 3em;
+}
+.main__grid__plantel {
+	grid-area: imagen;
+	display:flex;
+}
+.main__grid__plantel__div{
+	grid-area: imagen;
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 50px;
+	place-content: center;
+}
+.cubo--Equipo{
+	color: #FFEBEB;
+	background-color:#751B13;
+	width: 800px;
+	height: 800px;
+	border-radius: 10px;
+	text-align: center;
+	gap: 50px;
+}
+.tabla--resultados2{
+	font-size: 30px;
+	margin: 40px;
+	padding: 10px;
+	font-size: x-large;
+	color: #FFEBEB;
+	width: 90%;
+	line-height: 2em;
+}
+/* Fin equipo */
+/*PIE DE PAGINA*/
+.pie {
+	width: 100%;
+	background-color: #751B13;
+	position:absolute;
+	color: #FFEBEB;
+}
+.pie .grupo-1{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-areas:
+	"roja about media";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 150px;
+	grid-gap: 50px;
+	padding: 2rem;
+	font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.pie .grupo-1 .box figure{
+	grid-area: roja;
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.pie .grupo-1 .box figure p{
+	font-size: 30px;
+}
+.sobreNosotros{
+	grid-area: about;
+	color:#FFEBEB;
+	margin-bottom: 25px;
+	font-size: small;
+}
+.sobreNosotros p{
+	color: #FFEBEB;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.box h2{
+	margin-bottom: 1rem;
+}
+.pie .grupo-1 .red-social img {
+	grid-area: media;
+	color: #FFEBEB;
+	display:inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 45px;
+	margin-right: 10px;
+}
+.pie .grupo-2{
+	justify-content: center;
+	display: flex;
+    background-color: #17181860;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFEBEB;
+}
+.pie .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width: 1250px){
+	.padre__grid{
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-areas:
+		"resultado resultado"
+		"imagen imagen";
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2,1fr);
+		justify-items: center;
+		;
+	}
+	.cubo--chico{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	.cubo{
+		margin: 2rem;
+		padding: 1rem;
+		}
+
+/* Equipo */
+.main__grid {
+	justify-items: center;
+	align-items: center;
+	display: grid;
+	grid-template-areas:
+	"escudo escudo"
+	"titulo1 titulo1"
+	"imagen imagen"
+	"titulo2 titulo2"
+	"resultado resultado";
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+
+}
+.escudoRoja{
+	height: 150px;
+}
+
+.main__grid__titulo{
+	font-size: x-large;
+}
+
+.main__grid__intro__equipo{
+	font-size: small;
+}
+.main__grid__plantel__div{
+font-size: small;
+}
+
+.plantelJugador{
+	height: 200px;
+}
+
+.cubo--Equipo{
+	background-color: #FFEBEB;
+	width: 40rem;
+	height: auto;
+}
+.tabla--resultados2{
+background-color: #751B13;
+font-size: 20px;
+padding: 0;
+color: #FFEBEB;
+width: 90%;
+line-height: 2em;
+}
+
+
+@media screen and (max-width: 768px){
+	body main{
+		height: 100%;
+		}
+		/* Header */
+		#mainHeader{
+			height: 8rem;
+			}
+		.home__flex{
+			margin: 0 10% 0 0;
+			padding: 1rem;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		nav ul li a{
+		padding:2px;
+		display: block;
+		}
+
+		/* Index */
+	.titulo2{
+		height: 10rem;
+		font-size:xx-large;
+		background: linear-gradient(#751B13,#FFEBEB);
+	}
+
+		.padre__grid{
+			width: 100%;
+			height: 100%;
+			display: grid;
+			grid-template-areas:
+			"resultado resultado"
+			"imagen imagen";
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows:20rem 1fr;
+			justify-content: center;
+			align-items: center;
+		}
+		.padre__grid {
+			justify-items: center;
+		}
+		.cubo--chico{
+			margin-top: 2rem;
+			width: 250px;
+			height:250px;
+			font-size: x-small;
+		}
+		.tabla--resultados{
+			font-size: x-small;
+		}
+		.cubo{
+		margin: 0.5rem;
+		padding: 1rem;
+		width: 250px;
+		height: 500px;
+		font-size: x-small;
+		}
+		.cubo img{
+		padding: 0 0.5rem 0 0.5rem;
+		width: 5rem;
+		height: 5rem;
+		}
+		.cuboul {
+			display: flex;
+			flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		}
+/* Fin Index */
+/* equipo */
+.main__grid {
+	justify-items: center;
+	align-items: center;
+	display: grid;
+	grid-template-areas:
+	"escudo escudo"
+	"titulo1 titulo1"
+	"imagen imagen"
+	"titulo2 titulo2"
+	"resultado resultado";
+	grid-template-columns: repeat(2, 1fr);
+}
+.main__grid__informacion{
+	height:fit-content;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+.cubo--Equipo{
+	background-color: #FFEBEB;
+	width: 80%;
+}
+.tabla--resultados2{
+background-color: #751B13;
+font-size: small;
+padding: 0;
+width: 100%;
+color: #FFEBEB;
+line-height: 2em;
+}
+}
+/* fin equipo */
+/* pie */
+	.pie {
+		position:absolute;
+		margin-top: 2rem;
+		width: 100%;
+		font-size: xx-small;
+		height: 200px;
+	}
+
+	.pie .grupo-1{
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 5px;
+		font-family: 'Kdam Thmor Pro', sans-serif;
+	}
+	.pie .grupo-1 .box figure{
+		font-size: x-small;
+		justify-content: right;
+	}
+	.pie .grupo-1 .box figure p{
+		font-size: large;
+	}
+	.sobreNosotros{
+		font-size: xx-small;
+		margin:1rem;
+		line-height: 2em;
+		align-items: center;
+	}
+	.sobreNosotros p{
+		line-height: 1em;
+		margin:0;
+		margin-top: 0.3rem;
+	}
+	.box {
+		margin-top: 1rem;
+	}
+	.red-social{
+		display: flex;
+		flex-direction: column;
+	}
+	.pie .grupo-1 .red-social img {
+		padding: 3px;
+	}
+	.pie .grupo-2{
+		justify-content: center;
+		padding: 10px;	}
+	.pie .grupo-2 small{
+		font-size: xx-small;
+	}
+}
